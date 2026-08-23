@@ -1,6 +1,6 @@
 # lovstudio-wechat-article-operator
 
-![Version](https://img.shields.io/badge/version-0.1.0-CC785C)
+![Version](https://img.shields.io/badge/version-0.2.0-CC785C)
 
 自动读取、编辑、保存并重载验证微信公众号文章，为内容智能和品牌化能力提供可靠操作底座。
 
