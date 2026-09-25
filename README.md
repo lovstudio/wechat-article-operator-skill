@@ -1,6 +1,8 @@
-# lovstudio-wechat-article-operator
+# 公众号草稿操作（旧入口） · WeChat Draft Operator (Legacy)
 
-![Version](https://img.shields.io/badge/version-0.2.0-CC785C)
+![Version](https://img.shields.io/badge/version-0.2.1-CC785C)
+
+> 已归并：新任务请使用 `lov-publish-wechat-article` 的 `existing-draft` 管线。本目录只保留历史实现与兼容路由，不应继续安装或被语义发现。
 
 自动读取、编辑、保存并重载验证微信公众号文章，为内容智能和品牌化能力提供可靠操作底座。
 
@@ -10,19 +12,19 @@
 
 ```bash
 export SKILL_SOURCE_DIR="$(pwd)"
-mkdir -p "${LOVSTUDIO_SKILLS_INSTALL_DIR:?请设置本地 Skills 目录}"
+mkdir -p "${SKILLS_INSTALL_DIR:?请设置本地 Skills 目录}"
 ln -s "$SKILL_SOURCE_DIR" \
-  "$LOVSTUDIO_SKILLS_INSTALL_DIR/lovstudio-wechat-article-operator"
+  "$SKILLS_INSTALL_DIR/lov-wechat-article-operator"
 ```
 
 ## 使用
 
 ```text
-$lovstudio-wechat-article-operator 读取当前公众号文章，返回标题、摘要、章节和封面。
+$lov-wechat-article-operator 读取当前公众号文章，返回标题、摘要、章节和封面。
 ```
 
 ```text
-$lovstudio-wechat-article-operator 把这段代码块插到品牌介绍前，其他内容保持不变，并在保存后重载验证。
+$lov-wechat-article-operator 把这段代码块插到品牌介绍前，其他内容保持不变，并在保存后重载验证。
 ```
 
 输出包括文章状态、计划内修改、持久化验证，以及关键不变量检查。
